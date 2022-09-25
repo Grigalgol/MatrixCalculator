@@ -5,6 +5,7 @@ import junit.framework.TestSuite;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 import java.util.Arrays;
 
@@ -88,18 +89,14 @@ public class AppTest {
     }
 
     @Test
-    void testDetermined1(){
+    void testDetermined1() throws NoSquareException {
         Matrix oneDet = new Matrix(new double[][]{{1}});
         Assertions.assertEquals(1, App.determinant(oneDet));
     }
 
-    @Test
-    void testDetermined2(){
-        Assertions.assertEquals(0, App.determinant(null));
-    }
 
     @Test
-    void testDetermined3(){
+    void testDetermined2() throws NoSquareException {
         Assertions.assertEquals(0, App.determinant(matrix1));
     }
 }

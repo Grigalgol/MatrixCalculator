@@ -41,6 +41,12 @@ public class Matrix {
         return nrows == ncols;
     }
 
+    public int size() {
+        if (isSquare())
+            return nrows;
+        return -1;
+    }
+
     public Matrix multiplyByConstant(double constant) {
         Matrix mat = new Matrix(nrows, ncols);
         for (int i = 0; i < nrows; i++) {
