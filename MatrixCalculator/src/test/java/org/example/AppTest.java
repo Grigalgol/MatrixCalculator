@@ -42,7 +42,7 @@ public class AppTest {
 
     @Test
     void testSubtraction1(){
-        Matrix sum = App.addition(matrix1, matrix2);
+        Matrix sum = App.subtraction(matrix1, matrix2);
         Assertions.assertArrayEquals(sum.getValues(), new double[][]{{-10, -10, -10}, {2, 2, 5}, {-11, -34, 9}});
     }
 
