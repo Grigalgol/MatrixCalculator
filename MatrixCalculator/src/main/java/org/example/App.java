@@ -12,7 +12,8 @@ public class App
     }
 
     public static Matrix addition(Matrix matrix1, Matrix matrix2){
-        if (matrix1.getNcols() != matrix2.getNcols() || matrix1.getNrows() != matrix2.getNrows())
+        if (matrix1 == null || matrix2 == null) return null;
+        if(matrix1.getNcols() != matrix2.getNcols() || matrix1.getNrows() != matrix2.getNrows())
             return null;
         Matrix sumMatrix = new Matrix(matrix1.getNrows(), matrix1.getNcols());
         for (int i=0; i<matrix1.getNrows();i++) {
