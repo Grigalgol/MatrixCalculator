@@ -21,8 +21,7 @@ public class App {
     }
 
     public static Matrix subtraction(Matrix matrix1, Matrix matrix2) {
-       // return addition(matrix1, matrix2.multiplyByConstant(-1));
-        return null;
+       return addition(matrix1, matrix2.multiplyByConstant(-1));
     }
 
     public static Matrix multiply(Matrix matrix1, Matrix matrix2) {
