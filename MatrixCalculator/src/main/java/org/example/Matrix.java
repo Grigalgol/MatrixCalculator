@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Matrix {
 
     private int nrows;
@@ -32,5 +35,20 @@ public class Matrix {
 
     public double getValueAt(int row, int col) {
         return data[row][col];
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Matrix matrix = (Matrix) o;
+        return nrows == matrix.nrows && ncols == matrix.ncols && Arrays.equals(data, matrix.data);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(nrows, ncols);
+        result = 31 * result + Arrays.hashCode(data);
+        return result;
     }
 }

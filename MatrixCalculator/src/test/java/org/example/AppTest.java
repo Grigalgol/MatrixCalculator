@@ -1,9 +1,10 @@
 package org.example;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 
 public class AppTest {
@@ -20,5 +21,7 @@ public class AppTest {
         matrix3 = new Matrix(new double[][]{{1, 5, 9}, {7, 3, 2}});
         matrix4 = new Matrix(new double[][]{{1, 0, 0}, {0, 1, 0}, {0, 0,1}});
     }
+
+
 
 }
