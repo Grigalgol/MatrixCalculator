@@ -40,4 +40,20 @@ public class AppTest {
         Assertions.assertNull(App.addition(matrix1, null));
     }
 
+    @Test
+    void testSubtraction1(){
+        Matrix sum = App.addition(matrix1, matrix2);
+        Assertions.assertArrayEquals(sum.getValues(), new double[][]{{-10, -10, -10}, {2, 2, 5}, {-11, -34, 9}});
+    }
+
+    @Test
+    void testSubtraction2(){
+        Assertions.assertNull(App.subtraction(matrix1, matrix3));
+    }
+
+    @Test
+    void testSubtraction3(){
+        Assertions.assertNull(App.subtraction(matrix1, null));
+    }
+
 }
