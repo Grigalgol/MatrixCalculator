@@ -58,10 +58,6 @@ public class App {
         return 0;
     }
 
-    public static Matrix createSubMatrix(Matrix matrix, int excluding_row, int excluding_col) {
-        return null;
-    }
-
     public static Matrix inverse(Matrix matrix) {
         return null;
     }
