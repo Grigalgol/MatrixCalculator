@@ -17,4 +17,20 @@ public class Matrix {
         this.ncols = ncol;
         data = new double[nrow][ncol];
     }
+
+    public double[][] getValues() {
+        return data;
+    }
+
+    public void setValues(double[][] values) {
+        this.data = values;
+    }
+
+    public void setValueAt(int row, int col, double value) {
+        data[row][col] = value;
+    }
+
+    public double getValueAt(int row, int col) {
+        return data[row][col];
+    }
 }
