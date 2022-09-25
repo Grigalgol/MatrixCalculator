@@ -22,6 +22,12 @@ public class AppTest {
         matrix4 = new Matrix(new double[][]{{1, 0, 0}, {0, 1, 0}, {0, 0,1}});
     }
 
-
+    @Test
+    void testAddition(){
+        Matrix sum = App.addition(matrix1, matrix2);
+        Assertions.assertEquals(sum, new Matrix(new double[][]{{12, 14, 16}, {6, 8, 7}, {25, 50, 9}}));
+        Assertions.assertNull(App.addition(matrix1, matrix2));
+        Assertions.assertNull(App.addition(matrix1, null));
+    }
 
 }

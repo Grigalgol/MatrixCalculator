@@ -11,7 +11,9 @@ public class App
         System.out.println( "Hello World!" );
     }
 
-    public static Matrix addition(Matrix matrix1, Matrix matrix2){return null;}
+    public static Matrix addition(Matrix matrix1, Matrix matrix2){
+
+    }
     public static Matrix subtraction(Matrix matrix1, Matrix matrix2){return null;}
     public static Matrix multiply(Matrix matrix1, Matrix matrix2){return null;}
     public static Matrix transpose(Matrix matrix) {return null;}
