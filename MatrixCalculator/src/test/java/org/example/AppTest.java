@@ -72,4 +72,14 @@ public class AppTest {
         Assertions.assertNull(App.addition(matrix1, null));
     }
 
+    @Test
+    void testTranspose1(){
+        Matrix tr = App.transpose(matrix1);
+        Assertions.assertArrayEquals(tr.getValues(), new double[][]{{1, 4, 7}, {2, 5, 8}, {3, 6, 9}});
+    }
+
+    @Test
+    void testTranspose2(){
+        Assertions.assertNull(App.transpose(null));
+    }
 }
