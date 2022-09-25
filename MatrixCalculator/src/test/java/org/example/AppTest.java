@@ -56,14 +56,9 @@ public class AppTest {
     }
 
     @Test
-    void testMultiply1(){
+    void testMultiply1() throws IllegalDimensionException {
         Matrix mult = App.multiply(matrix1, matrix2);
         Assertions.assertArrayEquals(mult.getValues(), new double[][]{{69, 144, 15}, {162, 315, 57}, {255, 486, 99}});
-    }
-
-    @Test
-    void testMultiply2(){
-        Assertions.assertNull(App.multiply(matrix1, matrix3));
     }
 
     @Test

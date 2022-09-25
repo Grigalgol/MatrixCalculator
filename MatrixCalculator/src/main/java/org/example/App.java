@@ -26,9 +26,9 @@ public class App {
     }
 
 
-    public static Matrix multiply(Matrix matrix1, Matrix matrix2) {
+    public static Matrix multiply(Matrix matrix1, Matrix matrix2) throws IllegalDimensionException {
         if(matrix1 == null || matrix2 == null) return null;
-        if(matrix1.getNcols() != matrix2.getNrows()) return null;
+        if(matrix1.getNcols() != matrix2.getNrows()) throw new IllegalDimensionException("matrix1 coloms should be equals matrix2 rows");
         Matrix multipliedMatrix = new Matrix(matrix1.getNrows(), matrix2.getNcols());
 
         for (int i=0;i<multipliedMatrix.getNrows();i++) {
