@@ -37,6 +37,10 @@ public class Matrix {
         return data[row][col];
     }
 
+    public boolean isSquare() {
+        return nrows == ncols;
+    }
+
     public Matrix multiplyByConstant(double constant) {
         Matrix mat = new Matrix(nrows, ncols);
         for (int i = 0; i < nrows; i++) {
