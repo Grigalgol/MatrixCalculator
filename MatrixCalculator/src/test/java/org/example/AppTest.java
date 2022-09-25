@@ -25,9 +25,19 @@ public class AppTest {
     }
 
     @Test
-    void testAddition(){
+    void testAddition1(){
         Matrix sum = App.addition(matrix1, matrix2);
         Assertions.assertArrayEquals(sum.getValues(), new double[][]{{12, 14, 16}, {6, 8, 7}, {25, 50, 9}});
+    }
+
+    @Test
+    void testAddition2(){
+        Assertions.assertNull(App.addition(matrix1, matrix3));
+    }
+
+    @Test
+    void testAddition3(){
+        Assertions.assertNull(App.addition(matrix1, null));
     }
 
 }
