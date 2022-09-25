@@ -37,6 +37,16 @@ public class Matrix {
         return data[row][col];
     }
 
+    public Matrix multiplyByConstant(double constant) {
+        Matrix mat = new Matrix(nrows, ncols);
+        for (int i = 0; i < nrows; i++) {
+            for (int j = 0; j < ncols; j++) {
+                mat.setValueAt(i, j, data[i][j] * constant);
+            }
+        }
+        return mat;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
