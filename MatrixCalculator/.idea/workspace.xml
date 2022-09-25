@@ -37,7 +37,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Matrix&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.AppTest.testCofactor">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatrixCalculator" />
       <extension name="coverage">
@@ -69,8 +69,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.testCofactor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatrixCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
+      <option name="METHOD_NAME" value="testCofactor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.testCofactor" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.testAddition" />
       </list>
@@ -85,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664112871896</updated>
       <workItem from="1664112873912" duration="7282000" />
-      <workItem from="1664124896234" duration="2670000" />
+      <workItem from="1664124896234" duration="3344000" />
     </task>
     <servers />
   </component>

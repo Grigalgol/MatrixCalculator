@@ -94,4 +94,10 @@ public class AppTest {
     void testDetermined2() throws NoSquareException {
         Assertions.assertEquals(0, App.determinant(matrix1));
     }
+
+    @Test
+    void testCofactor() throws NoSquareException {
+        Matrix cof = App.cofactor(new Matrix(new double[][]{{2, 1, 3}, {2, 5, 2}, {1, 9, 8}}));
+        Assertions.assertArrayEquals(cof.getValues(), new double[][]{{22, -14, 13}, {19, 13, -17}, {-13, 2, 8}});
+    }
 }
