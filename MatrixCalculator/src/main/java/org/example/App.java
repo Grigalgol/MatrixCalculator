@@ -12,7 +12,13 @@ public class App
     }
 
     public static Matrix addition(Matrix matrix1, Matrix matrix2){
+        Matrix sumMatrix = new Matrix(matrix1.getNrows(), matrix1.getNcols());
+        for (int i=0; i<matrix1.getNrows();i++) {
+            for (int j=0;j<matrix1.getNcols();j++)
+                sumMatrix.setValueAt(i, j, matrix1.getValueAt(i, j) + matrix2.getValueAt(i,j));
 
+        }
+        return sumMatrix;
     }
     public static Matrix subtraction(Matrix matrix1, Matrix matrix2){return null;}
     public static Matrix multiply(Matrix matrix1, Matrix matrix2){return null;}

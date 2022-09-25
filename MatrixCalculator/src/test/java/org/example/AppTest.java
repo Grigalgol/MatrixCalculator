@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 
 public class AppTest {
 
@@ -25,9 +27,7 @@ public class AppTest {
     @Test
     void testAddition(){
         Matrix sum = App.addition(matrix1, matrix2);
-        Assertions.assertEquals(sum, new Matrix(new double[][]{{12, 14, 16}, {6, 8, 7}, {25, 50, 9}}));
-        Assertions.assertNull(App.addition(matrix1, matrix2));
-        Assertions.assertNull(App.addition(matrix1, null));
+        Assertions.assertArrayEquals(sum.getValues(), new double[][]{{12, 14, 16}, {6, 8, 7}, {25, 50, 9}});
     }
 
 }

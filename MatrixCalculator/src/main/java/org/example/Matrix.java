@@ -51,4 +51,21 @@ public class Matrix {
         result = 31 * result + Arrays.hashCode(data);
         return result;
     }
+
+    public int getNrows() {
+        return nrows;
+    }
+
+    public void setNrows(int nrows) {
+        this.nrows = nrows;
+    }
+
+    public int getNcols() {
+        return ncols;
+    }
+
+    public void setNcols(int ncols) {
+        this.ncols = ncols;
+    }
+
 }
